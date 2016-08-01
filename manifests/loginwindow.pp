@@ -1,4 +1,4 @@
-# manage desktop background
+# manage common loginwindow settings
 class mac_profile::loginwindow (
   $ensure                 = 'present',
   $guest_enabled          = false,
