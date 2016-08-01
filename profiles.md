@@ -26,3 +26,20 @@ To set everything to true, just `include 'mac_profile::restrict_appstore'` in th
 ```
 include 'mac_profile::skip_icloud_setup'
 ```
+
+# Login Window settings
+Manage common login window settings like hiding the admin users and setting loginwindow text.
+
+```
+class {'mac_profile::loginwindow':
+  guest_enabled          => false,
+  show_input_menu        => true,
+  show_fullname          => true,
+  hide_local_users       => true,
+  include_network_user   => false,
+  hide_admin_users       => true,
+  hide_mobile_accounts   => true,
+  disable_console_access => true,
+  loginwindow_text       => "This Mac is managed by ${::mac_profile::profile_payload_org}"
+}
+```
