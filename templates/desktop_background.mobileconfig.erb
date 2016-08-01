@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Desktop Bagkround</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+            <string><%= @profile_identifier_prefix %>.desktop_background</string>
+			<key>PayloadType</key>
+			<string>com.apple.desktop</string>
+			<key>PayloadUUID</key>
+			<string>3ACA7190-EA52-459C-88DA-FE9E87E97EB6</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>locked</key>
+			<true/>
+			<key>override-picture-path</key>
+            <string><%= @desktop_background_path %></string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Manage Desktop Background</string>
+	<key>PayloadDisplayName</key>
+	<string>Desktop Background</string>
+	<key>PayloadIdentifier</key>
+    <string><%= @profile_identifier_prefix %>.desktop_background</string>
+	<key>PayloadOrganization</key>
+    <string><%= @profile_payload_org %></string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>C7E78A8D-F0E3-4EDC-9BA7-8163E10BA847</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
